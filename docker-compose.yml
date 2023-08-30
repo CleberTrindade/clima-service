@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  climasservice.api:
+    image: ${DOCKER_REGISTRY-}climasserviceapi
+    build:
+      context: .
+      dockerfile: ClimasService.Api/Dockerfile
